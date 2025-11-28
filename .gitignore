@@ -1,0 +1,129 @@
+################################
+# OS / 공통 잡파일
+################################
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# 기타
+*.swp
+*.swo
+*.tmp
+*.bak
+
+################################
+# IDE / 에디터 설정
+################################
+.vscode/
+.idea/
+*.code-workspace
+
+# JetBrains 등
+*.iml
+out/
+.vscode-test/
+
+################################
+# Python / FastAPI 백엔드 공통
+################################
+# 가상환경
+venv/
+.env/
+env/
+.venv/
+backend/venv/
+
+# 바이트 코드 / 캐시
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+
+# 빌드 & 패키징 산출물
+build/
+dist/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+
+# 테스트 / 타입체커 캐시
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.dmypy.json
+.pyre/
+.cache/
+
+# 로컬 DB / 임시 데이터
+*.sqlite3
+*.db
+backend/dev.db
+
+################################
+# 환경변수 / 민감정보
+################################
+.env
+.env.*
+!.env.example
+!backend/.env.example
+!frontend/.env.example
+
+################################
+# Node / Vite 프론트엔드
+################################
+# 패키지
+node_modules/
+frontend/node_modules/
+
+# 빌드 산출물
+dist/
+frontend/dist/
+frontend/.vite/
+
+# 타입스크립트 인크리멘털
+*.tsbuildinfo
+
+# 로그
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+################################
+# 로그 / 런타임 파일
+################################
+logs/
+**/logs/
+*.log
+*.pid
+
+################################
+# Docker / 컨테이너 관련 (옵션)
+################################
+docker-data/
+.docker/
+*.pid
+
+################################
+# 기타 (필요시 추가)
+################################
+# 레포 내에서 개인 메모용 파일 있으면 여기 추가
+# e.g.) notes.md, scratch/, local_configs/
