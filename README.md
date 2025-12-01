@@ -72,7 +72,7 @@ docker compose down
 
 JS 테스트 코드:
 
-const ws = new WebSocket("ws://localhost:8000/ws/session/demo-session");
+```const ws = new WebSocket("ws://localhost:8000/ws/session/demo-session");
 ws.onopen = () => {
   ws.send(JSON.stringify({
     type: "utterance",
@@ -80,19 +80,19 @@ ws.onopen = () => {
     text: "hello mindmesh"
   }));
 };
-ws.onmessage = (e) => console.log("MSG:", e.data);
+ws.onmessage = (e) => console.log("MSG:", e.data);```
 
 ---
 
 ## 6. 임베딩 기능 테스트
 
-curl -X POST "http://127.0.0.1:8000/embed" -H "Content-Type: application/json" -d '{"texts": ["hello", "mindmesh"]}'
+```curl -X POST "http://127.0.0.1:8000/embed" -H "Content-Type: application/json" -d '{"texts": ["hello", "mindmesh"]}'```
 
 ---
 
 ## 7. 링크 생성 기능 테스트
 
-curl -X POST "http://127.0.0.1:8000/links/generate" -H "Content-Type: application/json" -d '{"session_id": "demo", "nodes": ["node1", "node2"]}'
+```curl -X POST "http://127.0.0.1:8000/links/generate" -H "Content-Type: application/json" -d '{"session_id": "demo", "nodes": ["node1", "node2"]}'```
 
 ---
 
